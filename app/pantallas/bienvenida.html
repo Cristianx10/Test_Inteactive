@@ -1,0 +1,31 @@
+<style>
+  .espaciado__left {
+    position: absolute;
+    width: 350px;
+    left: 250px;
+    top: 250px;
+    color: #eff5ff;
+
+    
+  }
+
+  .espaciado__left *{
+    margin-bottom: 25px;
+    }
+</style>
+
+<div class="espaciado__left">
+  <h1 id="titulo_bienvenida_titulo-h1">Orientación vocacional</h1>
+  <p>
+    Aquí va un texto de introducción para poder comenzar con la actividad para
+    el estudiante
+  </p>
+  <button class="boton" id="btn_bienvenida_empezar">Comenzar</button>
+</div>
+<script>
+  $(document).ready(function() {
+    $("#btn_bienvenida_empezar").click(function() {
+      $(".principal").load("../pantallas/tarjetas.html");
+    });
+  });
+</script>
